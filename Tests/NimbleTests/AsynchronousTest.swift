@@ -5,6 +5,7 @@ import CoreFoundation
 import Foundation
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 final class AsyncTest: XCTestCase {
     class Error: Swift.Error {}

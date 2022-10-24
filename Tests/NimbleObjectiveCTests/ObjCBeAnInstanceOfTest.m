@@ -13,7 +13,13 @@
 }
 
 - (void)testNegativeMatches {
-    expectFailureMessage(@"expected to be an instance of NSNull, got <__NSCFNumber instance>", ^{
+    NSString *expectedMessage;
+#if SWIFT_PACKAGE
+    expectedMessage = @"expected to be an instance of NSNull, got <NSConstantIntegerNumber instance>";
+#else
+    expectedMessage = @"expected to be an instance of NSNull, got <__NSCFNumber instance>";
+#endif
+    expectFailureMessage(expectedMessage, ^{
         expect(@1).to(beAnInstanceOf([NSNull class]));
     });
     expectFailureMessage(@"expected to not be an instance of NSNull, got <NSNull instance>", ^{

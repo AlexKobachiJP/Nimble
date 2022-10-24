@@ -164,7 +164,14 @@
         expect(@"string").to(haveCount(@6));
     });
 
-    expectFailureMessage(@"expected to get type of NSArray, NSSet, NSDictionary, or NSHashTable, got __NSCFNumber", ^{
+    NSString *expectedMessage;
+#if SWIFT_PACKAGE
+    expectedMessage = @"expected to get type of NSArray, NSSet, NSDictionary, or NSHashTable, got NSConstantIntegerNumber";
+#else
+    expectedMessage = @"expected to get type of NSArray, NSSet, NSDictionary, or NSHashTable, got __NSCFNumber";
+#endif
+
+    expectFailureMessage(expectedMessage, ^{
         expect(@1).to(haveCount(@6));
     });
 
@@ -172,7 +179,7 @@
         expect(@"string").to(haveCount(6));
     });
 
-    expectFailureMessage(@"expected to get type of NSArray, NSSet, NSDictionary, or NSHashTable, got __NSCFNumber", ^{
+    expectFailureMessage(expectedMessage, ^{
         expect(@1).to(haveCount(6));
     });
 }

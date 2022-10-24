@@ -1,5 +1,6 @@
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 func alwaysFail<T>() -> Predicate<T> {
     return Predicate { _ throws -> PredicateResult in

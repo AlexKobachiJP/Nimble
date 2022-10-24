@@ -3,6 +3,7 @@
 import XCTest
 import Nimble
 import Foundation
+import NimbleSharedTestHelpers
 
 final class PostNotificationTest: XCTestCase {
     let notificationCenter = NotificationCenter()

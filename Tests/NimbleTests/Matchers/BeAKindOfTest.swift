@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 private class TestNull: NSNull {}
 private protocol TestProtocol {}

@@ -77,11 +77,26 @@
     });
 }
 
-- (void)testItReportsTypesItMatchesAgainst {
-    expectFailureMessage(@"expected to be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got __NSCFNumber type", ^{
+- (void)testItReportsTypesItMatchesAgainst_toVariant {
+    NSString *expectedMessage;
+#if SWIFT_PACKAGE
+    expectedMessage = @"expected to be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got NSConstantIntegerNumber type";
+#else
+    expectedMessage = @"expected to be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got __NSCFNumber type";
+#endif
+    expectFailureMessage(expectedMessage, ^{
         expect(@1).to(beEmpty());
     });
-    expectFailureMessage(@"expected to not be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got __NSCFNumber type", ^{
+}
+
+- (void)testItReportsTypesItMatchesAgainst_toNotVariant {
+    NSString *expectedMessage;
+#if SWIFT_PACKAGE
+    expectedMessage = @"expected to not be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got NSConstantIntegerNumber type";
+#else
+    expectedMessage = @"expected to not be empty (only works for NSArrays, NSSets, NSIndexSets, NSDictionaries, NSHashTables, and NSStrings), got __NSCFNumber type";
+#endif
+    expectFailureMessage(expectedMessage, ^{
         expect(@1).toNot(beEmpty());
     });
 }

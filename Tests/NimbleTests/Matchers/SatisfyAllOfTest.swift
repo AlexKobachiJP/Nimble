@@ -1,6 +1,7 @@
 import XCTest
 import Nimble
 import Foundation
+import NimbleSharedTestHelpers
 
 final class SatisfyAllOfTest: XCTestCase {
     func testSatisfyAllOf() {

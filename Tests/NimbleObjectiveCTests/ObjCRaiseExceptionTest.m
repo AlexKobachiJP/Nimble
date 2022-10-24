@@ -1,6 +1,7 @@
 #import <XCTest/XCTest.h>
 #import "NimbleSpecHelper.h"
 
+#if !SWIFT_PACKAGE
 @interface ObjCRaiseExceptionTest : XCTestCase
 
 @end
@@ -176,3 +177,4 @@
 }
 
 @end
+#endif

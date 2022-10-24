@@ -1,6 +1,7 @@
 import Foundation
 import Nimble
 import XCTest
+import NimbleSharedTestHelpers
 
 final class BeginWithPrefixTest: XCTestCase {
 

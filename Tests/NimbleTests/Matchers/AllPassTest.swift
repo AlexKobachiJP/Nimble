@@ -1,5 +1,6 @@
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 /// Add operators to `Optional` for conforming `Comparable` that removed in Swift 3.0
 extension Optional where Wrapped: Comparable {

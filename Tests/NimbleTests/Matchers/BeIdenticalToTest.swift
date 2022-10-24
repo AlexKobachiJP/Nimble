@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import NimbleSharedTestHelpers
 @testable import Nimble
 
 final class BeIdenticalToTest: XCTestCase {

@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 private let error: Error = NSError(domain: "test", code: 0, userInfo: nil)
 

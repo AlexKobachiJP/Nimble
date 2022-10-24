@@ -1,5 +1,6 @@
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 final class BeNilTest: XCTestCase {
     func producesNil() -> [Int]? {

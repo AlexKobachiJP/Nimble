@@ -1,5 +1,8 @@
 @import Nimble;
-#import "NimbleTests-Swift.h"
+@import NimbleSharedTestHelpers;
+#if SWIFT_PACKAGE
+@import NimbleObjectiveC;
+#endif
 
 // Use this when you want to verify the failure message for when an expectation fails
 #define expectFailureMessage(MSG, BLOCK) \

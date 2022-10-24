@@ -1,5 +1,6 @@
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 final class MatchTest: XCTestCase {
     func testMatchPositive() {

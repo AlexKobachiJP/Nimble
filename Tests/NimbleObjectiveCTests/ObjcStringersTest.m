@@ -1,5 +1,6 @@
 @import XCTest;
 @import Nimble;
+@import NimbleObjectiveC;
 
 @interface ObjcStringersTest : XCTestCase
 

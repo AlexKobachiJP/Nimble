@@ -1,5 +1,4 @@
 #import <XCTest/XCTest.h>
-#import <Nimble/Nimble.h>
 #import "NimbleSpecHelper.h"
 
 @interface ObjCSyncTest : XCTestCase

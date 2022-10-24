@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 private protocol TestProtocol {}
 private class TestClassConformingToProtocol: TestProtocol {}

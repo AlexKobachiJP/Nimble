@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import Nimble
+import NimbleSharedTestHelpers
 
 final class BeWithinTest: XCTestCase {
     func testBeWithinPositiveMatches() {
