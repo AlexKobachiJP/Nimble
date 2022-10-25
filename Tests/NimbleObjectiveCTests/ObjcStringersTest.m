@@ -1,6 +1,9 @@
 @import XCTest;
 @import Nimble;
+
+#if SWIFT_PACKAGE
 @import NimbleObjectiveC;
+#endif
 
 @interface ObjcStringersTest : XCTestCase
 

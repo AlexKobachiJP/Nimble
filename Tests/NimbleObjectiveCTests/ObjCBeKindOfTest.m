@@ -18,7 +18,7 @@
 #if SWIFT_PACKAGE
     expectedMessage = @"expected to be a kind of NSNull, got <NSConstantIntegerNumber instance>";
 #else
-    expectedMessage = @"expected to be an instance of NSNull, got <__NSCFNumber instance>";
+    expectedMessage = @"expected to be a kind of NSNull, got <__NSCFNumber instance>";
 #endif
     expectFailureMessage(expectedMessage, ^{
         expect(@1).to(beAKindOf([NSNull class]));

@@ -1,4 +1,3 @@
-@import NimbleObjectiveC;
 #import <XCTest/XCTest.h>
 
 #if SWIFT_PACKAGE
