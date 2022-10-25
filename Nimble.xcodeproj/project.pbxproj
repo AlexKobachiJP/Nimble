@@ -413,6 +413,14 @@
 		899441F92902EF2600C1FAF9 /* DSL+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899441F32902EF0900C1FAF9 /* DSL+AsyncAwait.swift */; };
 		899441FA2902EF2700C1FAF9 /* DSL+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899441F32902EF0900C1FAF9 /* DSL+AsyncAwait.swift */; };
 		899441FB2902EF2800C1FAF9 /* DSL+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899441F32902EF0900C1FAF9 /* DSL+AsyncAwait.swift */; };
+		89F5E07D290768A5001F9377 /* StatusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07B290768A5001F9377 /* StatusTest.swift */; };
+		89F5E07E290768A5001F9377 /* StatusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07B290768A5001F9377 /* StatusTest.swift */; };
+		89F5E07F290768A5001F9377 /* StatusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07B290768A5001F9377 /* StatusTest.swift */; };
+		89F5E080290768A5001F9377 /* StatusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07B290768A5001F9377 /* StatusTest.swift */; };
+		89F5E081290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */; };
+		89F5E082290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */; };
+		89F5E083290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */; };
+		89F5E084290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */; };
 		964CFEFD1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
 		964CFEFE1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
 		964CFEFF1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
@@ -822,6 +830,8 @@
 		898F28AF25D9F4C30052B8D0 /* AlwaysFailMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysFailMatcher.swift; sourceTree = "<group>"; };
 		899441EE2902EE4B00C1FAF9 /* AsyncAwaitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTest.swift; sourceTree = "<group>"; };
 		899441F32902EF0900C1FAF9 /* DSL+AsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+AsyncAwait.swift"; sourceTree = "<group>"; };
+		89F5E07B290768A5001F9377 /* StatusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTest.swift; sourceTree = "<group>"; };
+		89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnFailureThrowsTest.swift; sourceTree = "<group>"; };
 		964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrowAssertion.swift; sourceTree = "<group>"; };
 		965B0D0B1B62C06D0005AE66 /* UserDescriptionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDescriptionTest.swift; sourceTree = "<group>"; };
 		A8A3B6E920712FC100E25A08 /* SatisfyAllOfTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatisfyAllOfTest.swift; sourceTree = "<group>"; };
@@ -1022,7 +1032,9 @@
 			isa = PBXGroup;
 			children = (
 				CDC157902511957100EAA480 /* DSLTest.swift */,
+				89F5E07C290768A5001F9377 /* OnFailureThrowsTest.swift */,
 				CDBC39B82462EA7D00069677 /* PredicateTest.swift */,
+				89F5E07B290768A5001F9377 /* StatusTest.swift */,
 				1F0648D31963AAB2001F9C46 /* SynchronousTest.swift */,
 				1F925EE5195C121200ED456B /* AsynchronousTest.swift */,
 				899441EE2902EE4B00C1FAF9 /* AsyncAwaitTest.swift */,
@@ -1794,6 +1806,7 @@
 				893A9D2E290643BA0092490F /* ObjCSyncTest.m in Sources */,
 				1F925EEC195C12C800ED456B /* RaisesExceptionTest.swift in Sources */,
 				899441F02902EE4B00C1FAF9 /* AsyncAwaitTest.swift in Sources */,
+				89F5E07E290768A5001F9377 /* StatusTest.swift in Sources */,
 				893A9CD2290643BA0092490F /* ObjCBeGreaterThanOrEqualToTest.m in Sources */,
 				893A9CDE290643BA0092490F /* ObjCBeFalseTest.m in Sources */,
 				893A9CDA290643BA0092490F /* ObjCBeLessThanOrEqualToTest.m in Sources */,
@@ -1813,6 +1826,7 @@
 				7B13BA0E1DD361DF00C9098C /* ContainElementSatisfyingTest.swift in Sources */,
 				1F925F02195C189500ED456B /* ContainTest.swift in Sources */,
 				1F925F11195C190B00ED456B /* BeGreaterThanOrEqualToTest.swift in Sources */,
+				89F5E082290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */,
 				1F925EEF195C136500ED456B /* BeLogicalTest.swift in Sources */,
 				893A9D26290643BA0092490F /* ObjCSatisfyAnyOfTest.m in Sources */,
 				893A9CBE290643BA0092490F /* ObjCBeTruthyTest.m in Sources */,
@@ -1940,6 +1954,7 @@
 				899441F12902EE4B00C1FAF9 /* AsyncAwaitTest.swift in Sources */,
 				893A9D2F290643BA0092490F /* ObjCSyncTest.m in Sources */,
 				62FB326923B78D4F0047BED9 /* BeginWithPrefixTest.swift in Sources */,
+				89F5E07F290768A5001F9377 /* StatusTest.swift in Sources */,
 				893A9CD3290643BA0092490F /* ObjCBeGreaterThanOrEqualToTest.m in Sources */,
 				893A9CDF290643BA0092490F /* ObjCBeFalseTest.m in Sources */,
 				893A9CDB290643BA0092490F /* ObjCBeLessThanOrEqualToTest.m in Sources */,
@@ -1959,6 +1974,7 @@
 				1F5DF1AB1BDCA10200C3A531 /* ThrowErrorTest.swift in Sources */,
 				1F5DF1A51BDCA10200C3A531 /* ContainTest.swift in Sources */,
 				AE7ADE4B1C80C00D00B94CD3 /* MatchErrorTest.swift in Sources */,
+				89F5E083290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */,
 				7B13BA0F1DD361DF00C9098C /* ContainElementSatisfyingTest.swift in Sources */,
 				893A9D27290643BA0092490F /* ObjCSatisfyAnyOfTest.m in Sources */,
 				893A9CBF290643BA0092490F /* ObjCBeTruthyTest.m in Sources */,
@@ -2091,6 +2107,7 @@
 				893A9D2D290643BA0092490F /* ObjCSyncTest.m in Sources */,
 				1F925EED195C12C800ED456B /* RaisesExceptionTest.swift in Sources */,
 				899441EF2902EE4B00C1FAF9 /* AsyncAwaitTest.swift in Sources */,
+				89F5E07D290768A5001F9377 /* StatusTest.swift in Sources */,
 				893A9CD1290643BA0092490F /* ObjCBeGreaterThanOrEqualToTest.m in Sources */,
 				893A9CDD290643BA0092490F /* ObjCBeFalseTest.m in Sources */,
 				893A9CD9290643BA0092490F /* ObjCBeLessThanOrEqualToTest.m in Sources */,
@@ -2110,6 +2127,7 @@
 				7B13BA0D1DD361DE00C9098C /* ContainElementSatisfyingTest.swift in Sources */,
 				1F925F03195C189500ED456B /* ContainTest.swift in Sources */,
 				B20058C520E92CE400C1264D /* ElementsEqualTest.swift in Sources */,
+				89F5E081290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */,
 				1F925F12195C190B00ED456B /* BeGreaterThanOrEqualToTest.swift in Sources */,
 				893A9D25290643BA0092490F /* ObjCSatisfyAnyOfTest.m in Sources */,
 				893A9CBD290643BA0092490F /* ObjCBeTruthyTest.m in Sources */,
@@ -2245,6 +2263,7 @@
 				893A9D30290643BA0092490F /* ObjCSyncTest.m in Sources */,
 				D95F8949267EA1E8004B1B4D /* MatchTest.swift in Sources */,
 				893A9CD4290643BA0092490F /* ObjCBeGreaterThanOrEqualToTest.m in Sources */,
+				89F5E080290768A5001F9377 /* StatusTest.swift in Sources */,
 				893A9CE0290643BA0092490F /* ObjCBeFalseTest.m in Sources */,
 				893A9CDC290643BA0092490F /* ObjCBeLessThanOrEqualToTest.m in Sources */,
 				D95F8951267EA1EE004B1B4D /* utils.swift in Sources */,
@@ -2264,6 +2283,7 @@
 				D95F8933267EA1E8004B1B4D /* BeWithinTest.swift in Sources */,
 				D95F893A267EA1E8004B1B4D /* ContainElementSatisfyingTest.swift in Sources */,
 				D95F8952267EA1EE004B1B4D /* ObjectWithLazyProperty.swift in Sources */,
+				89F5E084290768A5001F9377 /* OnFailureThrowsTest.swift in Sources */,
 				D95F894F267EA1E8004B1B4D /* ThrowErrorTest.swift in Sources */,
 				893A9D28290643BA0092490F /* ObjCSatisfyAnyOfTest.m in Sources */,
 				893A9CC0290643BA0092490F /* ObjCBeTruthyTest.m in Sources */,

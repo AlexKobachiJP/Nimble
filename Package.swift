@@ -47,13 +47,11 @@ let package = Package(
         targets.append(contentsOf: [
             .target(
                 name: "NimbleObjectiveC",
-                dependencies: ["Nimble"],
-                exclude: ["Info.plist"]
+                dependencies: ["Nimble"]
             ),
             .testTarget(
                 name: "NimbleObjectiveCTests",
-                dependencies: ["NimbleObjectiveC", "Nimble", "NimbleSharedTestHelpers"],
-                exclude: ["Info.plist"]
+                dependencies: ["NimbleObjectiveC", "Nimble", "NimbleSharedTestHelpers"]
             )
         ])
 #endif
